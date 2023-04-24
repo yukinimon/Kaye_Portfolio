@@ -17,7 +17,6 @@ header .mainLogo {
   height: 100%;
   object-fit: cover;
 }
-
 .menu {
   color: #fff;
   margin-left: auto;
@@ -26,20 +25,26 @@ header .mainLogo {
   position: relative;
   z-index: 10;
 }
-
-.links {
+.navBar {
   position: absolute;
   inset: 0;
   z-index: 5;
   width: 100%;
   height: 100vh;
-  background-color: #111;
+  background-color: #2d2727;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.links ul {
+.homeLogo,
+.infoLogo,
+.projectLogo,
+.contactLogo {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.navBar ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,14 +53,22 @@ header .mainLogo {
   padding: 0;
   gap: 1.5rem;
 }
-
-.links ul li a {
+.navBar ul li a {
   color: white;
   text-decoration: none;
   font-size: 2rem;
   text-transform: uppercase;
 }
-
 .hide {
   display: none;
+}
+.content {
+  padding-top: 65px;
+}
+.content h2 {
+  color: #690fad;
+}
+.content p {
+  font-weight: 400;
+  color: white;
 }
