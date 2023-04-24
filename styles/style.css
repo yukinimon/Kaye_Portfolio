@@ -5,8 +5,9 @@ body {
 header {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin-inline: auto;
+  padding: 1rem 0;
+  width: 95%;
+  margin: 0 auto;
 }
 header .mainLogo {
   height: 2.5rem;
@@ -16,36 +17,45 @@ header .mainLogo {
   height: 100%;
   object-fit: cover;
 }
-.beforeNav {
-  position: fixed;
+
+.menu {
+  color: #fff;
+  margin-left: auto;
   font-size: 2.5rem;
-  right: 20px;
-  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
-.afterNav {
-  display: none;
-  position: fixed;
-  right: 20px;
-  font-size: 2.5rem;
-  color: white;
+
+.links {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .hide {
   display: none;
-}
-header ul {
-  display: flex;
-  gap: 15px;
-}
-header ul li {
-  list-style: none;
-}
-header ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.8em;
-  font-weight: 400;
-}
-header ul li.hom a,
-header ul li:hover a {
-  color: #690fad;
 }
