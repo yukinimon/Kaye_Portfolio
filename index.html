@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Krischelle Camama</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/reset.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <title>Krischelle Camama</title>
-</head>
-
-<body>
-  <header>
-    <a href="index.html" class="mainLogo">
-      <img src="./images/logo_kc.png" draggable="false" />
-    </a>
-    <div class="links hide" id="links">
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </div>
-    <ion-icon id="open_menu" class="menu" name="menu" onclick="toggleMenu()"></ion-icon>
-    <ion-icon id="close_menu" class="menu hide" name="close" onclick="toggleMenu()"></ion-icon>
-  </header>
-  <section id="main">
-    <div class="content">
-      <h2>Hi! Welcome I am Krischelle Camama</h2>
-      <p>
-        Hi there!, I'm Krischelle Camama, a Front-End Web Developer, Graphic
-        Designer based in Philippines. With almost 3 years of experience in
-        Graphic Design, and 1 year in Front-End Web Developer I'm passionate
-        about this career. <br />
-        <br />
-        I'm excited to show you my work, so please take a look at my portfolio
-        to see some of my best projects. If you have any questions or would
-        like to discuss a project, feel free to get in touch with me using the
-        contact form below. <br />
-      </p>
-      <a href="#" class="mainBtn">About Me</a>
-    </div>
-  </section>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./scripts/main.js"></script>
-</body>
-
+  <body>
+    <header>
+      <a href="index.html" class="mainLogo">
+        <img src="./images/logo_kc.png" draggable="false" />
+      </a>
+      <div class="navBar hide" id="nav">
+        <ul>
+          <li>
+            <ion-icon class="homeLogo" name="home"></ion-icon
+            ><a href="./index.html">Home</a>
+          </li>
+          <li>
+            <ion-icon class="infoLogo" name="information-circle"></ion-icon
+            ><a href="#">About Me</a>
+          </li>
+          <li>
+            <ion-icon class="projectLogo" name="newspaper"></ion-icon
+            ><a href="#">Projects</a>
+          </li>
+          <li>
+            <ion-icon class="contactLogo" name="call"></ion-icon
+            ><a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <ion-icon
+        id="open_menu"
+        class="menu"
+        name="menu"
+        onclick="toggleMenu()"
+      ></ion-icon>
+      <ion-icon
+        id="close_menu"
+        class="menu hide"
+        name="close"
+        onclick="toggleMenu()"
+      ></ion-icon>
+    </header>
+    <section id="main">
+      <div class="content">
+        <h2>Hi! Welcome I am Krischelle Camama</h2>
+        <p>
+          Hi there!, I'm Krischelle Camama, a Front-End Web Developer, Graphic
+          Designer based in Philippines. With almost 3 years of experience in
+          Graphic Design, and 1 year in Front-End Web Developer I'm passionate
+          about this career. <br />
+          <br />
+          I'm excited to show you my work, so please take a look at my portfolio
+          to see some of my best projects. If you have any questions or would
+          like to discuss a project, feel free to get in touch with me using the
+          contact form below. <br />
+        </p>
+        <a href="#" class="mainBtn">About Me</a>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
