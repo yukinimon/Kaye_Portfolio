@@ -74,7 +74,7 @@ header .mainLogo {
 }
 .content p {
   position: relative;
-  margin: 10px 0 0 20px;
+  margin: 10px 10px 0 20px;
   line-height: 1.07em;
   font-weight: 400;
   color: white;
@@ -93,7 +93,7 @@ header .mainLogo {
 }
 .mePic {
   object-fit: cover;
-  margin-left: 225px;
+  margin-left: 200px;
   height: 300px;
 }
 #projects {
