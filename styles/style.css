@@ -93,7 +93,7 @@ header .mainLogo {
 }
 .mePic {
   object-fit: cover;
-  margin-left: 200px;
+  display: flex;
   height: 300px;
 }
 #projects {
