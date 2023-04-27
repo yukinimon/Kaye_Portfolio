@@ -7,9 +7,9 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--background-color-2);
 }
 header {
+  background-color: var(--background-color-2);
   display: flex;
   align-items: center;
   padding: 1rem 0.5rem;
@@ -31,7 +31,7 @@ header .mainLogo {
   z-index: 10;
 }
 .navBar {
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 5;
   width: 100%;
@@ -166,19 +166,33 @@ header .mainLogo {
   letter-spacing: 0.08rem;
   font-weight: 500;
 }
-#contentProject {
+#projects {
   display: grid;
   background-color: var(--background-color-1);
 }
-#contentProject .contentText h2 {
+#projects .projectText h2 {
   color: var(--color-2);
   text-align: center;
   font-size: 2em;
-  padding: 1rem 0;
 }
-#contentProject .contentText p {
+#projects .projectText p {
   margin: 15px;
   text-align: center;
   color: var(--color-2);
   line-height: 1.1em;
+}
+#contacts {
+  display: grid;
+  background-color: var(--background-color-2);
+  color: var(--color-2);
+  text-align: center;
+}
+#contacts h2 {
+  font-size: 2rem;
+}
+#contacts p {
+  line-height: 1.1em;
+}
+.disable-scroll {
+  overflow: hidden;
 }
